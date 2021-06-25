@@ -4,12 +4,12 @@
 
 def bits(integer)
   number =  integer.to_s(2)
+  count = number.count('1')
   puts(number)
-
+  return count
 end
 
-
-bits(567)
+puts bits(567)
 
 
 

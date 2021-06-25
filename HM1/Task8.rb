@@ -5,7 +5,7 @@ puts('Введите цену одной шоколадки: ')
 price = gets.to_f
 amount = money.to_i/price.to_i
 puts('Количество школадок, которое можно купить :' + amount.to_s)
-oddmoney = money/price - amount #Есть ли метод для "отбрасывания" дробной части?
-oddmoney = oddmoney.round(2)
+oddmoney = money - (amount.truncate*price)
+oddmoney = oddmoney.round(2).to_f
 puts('Ваша сдача:' + oddmoney.to_s)
 
