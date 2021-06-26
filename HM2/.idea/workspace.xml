@@ -41,7 +41,7 @@
       <EXTENSION ID="JRubyRunConfigurationExtension" NailgunExecEnabled="false" />
       <EXTENSION ID="RubyCoverageRunConfigurationExtension" track_test_folders="true" runner="rcov" IGNORE_RCOVRT="true" ENABLE_BRANCH_COVERAGE="true" ENABLE_FORKED_COVERAGE="true" />
       <EXTENSION ID="org.jetbrains.plugins.ruby.rails.run.RailsRunConfigurationExtension" SCRATCH_USE_RAILS_RUNNER="false" />
-      <RUBY_RUN_CONFIG NAME="SCRIPT_PATH" VALUE="$MODULE_DIR$/ex.rb" />
+      <RUBY_RUN_CONFIG NAME="SCRIPT_PATH" VALUE="$MODULE_DIR$/Task1.rb" />
       <RUBY_RUN_CONFIG NAME="SCRIPT_ARGS" VALUE="" />
       <method v="2" />
     </configuration>
@@ -55,7 +55,9 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1624635702011</updated>
-      <workItem from="1624635703384" duration="3194000" />
+      <workItem from="1624635703384" duration="4796000" />
+      <workItem from="1624640619167" duration="964000" />
+      <workItem from="1624648328724" duration="691000" />
     </task>
     <servers />
   </component>
@@ -63,6 +65,6 @@
     <option name="version" value="3" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/HM2@Unnamed.rcov" NAME="Unnamed Coverage Results" MODIFIED="1624638897835" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" MODULE_NAME="HM2" />
+    <SUITE FILE_PATH="coverage/HM2@Unnamed.rcov" NAME="Unnamed Coverage Results" MODIFIED="1624648851668" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" MODULE_NAME="HM2" />
   </component>
 </project>
