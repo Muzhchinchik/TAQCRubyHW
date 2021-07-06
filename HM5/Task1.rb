@@ -49,35 +49,60 @@ cars = [
     :color => "green"
   }
 ]
-def averageMileage
+def averageMileage carr
+  average = 0
+  carr.each do |car|
+    average += car[:mileage]
+  end
+  average = average / carr.length
+
+  return average
 
 end
 
-def averageYearOfProdaction
+def averageYearOfProdaction carr
+  average = 0
+
+  carr.each do |car|
+    average += car[:year]
+  end
+
+  average = average/carr.length
+  return average
 
 end
 
-def averageYear
+def averageYear carr
+  average = 0
+
+  carr.each do |car|
+    average += 2021 - car[:year]
+  end
+  average = average/carr.length
+  return average
 
 end
 
-def averageMileagePerYear
+def averageMileagePerYear carr
+  y = (Time.now).year
+  carr.each { |car| car["mpy"] = car[:mileage] / (y - car[:year]) }
+
+  return carr
+end
+
+def medianOfMileage carr
 
 end
 
-def medianOfMileage
+def medianYearOfProdaction carr
 
 end
 
-def medianYearOfProdaction
+def medianYear carr
 
 end
 
-def medianYear
-
-end
-
-def medianMileagePerYear
+def medianMileagePerYear carr
 
 
 end
@@ -86,11 +111,12 @@ def mostPopularColour(carr)
 
 end
 
-def theRarestColour
+def theRarestColour carr
 
 end
-
-p mostPopularColour cars
+p averageYear cars
+# p averageYearOfProdaction cars
+# p averageMileage cars
 
 # Средний пробег
 # Средний год выпуска
