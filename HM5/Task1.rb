@@ -83,11 +83,16 @@ def averageYear carr
 
 end
 
-def averageMileagePerYear carr
+def averageMileagePerYear carr  # не работает
   y = (Time.now).year
   carr.each { |car| car["mpy"] = car[:mileage] / (y - car[:year]) }
+  average = 0
+  carr.each do |car|
+    average += car[:mpy]
+  end
+  average = average/carr.length
 
-  return carr
+  return average
 end
 
 def medianOfMileage carr
@@ -114,7 +119,7 @@ end
 def theRarestColour carr
 
 end
-p averageYear cars
+p averageMileagePerYear cars
 # p averageYearOfProdaction cars
 # p averageMileage cars
 
@@ -128,3 +133,13 @@ p averageYear cars
 # Медиана пробега за год
 # Самый популярный цвет авто (массив, если их > 1)
 # Самый редкий цвет авто (массив, если их > 1)
+#
+# y = (Time.now).year
+#   carr.each { |car| car["mpy"] = car[:mileage] / (y - car[:year]) }
+#   average = 0
+#   carr.each do |car|
+#     average += car[:mpy]
+#   end
+#   average = average/carr.length
+#
+#   return average
