@@ -10,7 +10,20 @@ def self.abbreviate(phrase)
         .join.upcase
 end
 str = "Hello my world"
-puts abbreviate(str)
+#puts abbreviate(str)
+
+#----------Я СДЕЛЯЛЬ, но криво-------------
+def abbreviatee(srt)
+  arr = []
+  newstr=srt.split(" ")
+  newstr.each do |word|
+    arr.push(word[0].upcase)
+  end
+  return arr.join('')
+
+end
+
+print abbreviatee(str)
 
 
 #Шаг за шагом:
