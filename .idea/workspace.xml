@@ -82,7 +82,8 @@
       <workItem from="1625518830145" duration="425000" />
       <workItem from="1625579098919" duration="2753000" />
       <workItem from="1625592410175" duration="2364000" />
-      <workItem from="1625650694454" duration="2155000" />
+      <workItem from="1625650694454" duration="2294000" />
+      <workItem from="1625656585979" duration="1550000" />
     </task>
     <servers />
   </component>
@@ -90,6 +91,6 @@
     <option name="version" value="3" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/TAQCRubyHW@Unnamed.rcov" NAME="Unnamed Coverage Results" MODIFIED="1625652800971" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" MODULE_NAME="TAQCRubyHW" />
+    <SUITE FILE_PATH="coverage/TAQCRubyHW@Unnamed.rcov" NAME="Unnamed Coverage Results" MODIFIED="1625657498344" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" MODULE_NAME="TAQCRubyHW" />
   </component>
 </project>

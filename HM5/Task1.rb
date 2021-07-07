@@ -104,7 +104,7 @@ def medianOfMileage carr
   count = mileage.length
   if count.odd?
     return mileage[count/2]
-  elsif count.odd?
+  elsif count.add?
     return mileage[(count/2 - 1)] + mileage[(count/2 + 1)] / 2
   end
 end
@@ -118,7 +118,7 @@ def medianYearOfProdaction carr
   count = years.length
   if count.odd?
     return years[count/2]
-  elsif count.odd?
+  elsif count.add?
     return years[(count/2 - 1)] + years[(count/2 + 1)] / 2
   end
 end
@@ -133,7 +133,7 @@ def medianYear carr
   count = years.length
   if count.odd?
     return years[count/2]
-  elsif count.odd?
+  elsif count.add?
     return years[(count/2 - 1)] + years[(count/2 + 1)] / 2
   end
 end
@@ -149,12 +149,13 @@ def medianMileagePerYear carr
   count = mmpy.length
   if count.odd?
     return mmpy[count/2]
-  elsif count.odd?
+  elsif count.add?
     return mmpy[(count/2 - 1)] + mmpy[(count/2 + 1)] / 2
   end
 end
 
 def mostPopularColour(carr)
+ 
 end
 
 def theRarestColour carr
@@ -163,7 +164,7 @@ end
 # p averageMileagePerYear cars
 # p averageYearOfProdaction cars
 # p averageMileage cars
-p averageMileagePerYear cars
+p mostPopularColour cars
 # Средний пробег
 # Средний год выпуска
 # Средний возраст
@@ -175,12 +176,3 @@ p averageMileagePerYear cars
 # Самый популярный цвет авто (массив, если их > 1)
 # Самый редкий цвет авто (массив, если их > 1)
 #
-# y = (Time.now).year
-#   carr.each { |car| car["mpy"] = car[:mileage] / (y - car[:year]) }
-#   average = 0
-#   carr.each do |car|
-#     average += car[:mpy]
-#   end
-#   average = average/carr.length
-#
-#   return average
