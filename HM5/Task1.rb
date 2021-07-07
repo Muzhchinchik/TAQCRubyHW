@@ -88,7 +88,7 @@ def averageMileagePerYear carr  # не работает
   carr.each { |car| car["mpy"] = car[:mileage] / (y - car[:year]) }
   average = 0
   carr.each do |car|
-    average += car[:mpy]
+    average += car["mpy"]
   end
   average = average/carr.length
 
@@ -139,7 +139,19 @@ def medianYear carr
 end
 
 def medianMileagePerYear carr
-  
+  y = (Time.now).year
+  mmpy=[]
+  carr.each { |car| car["mpy"] = car[:mileage] / (y - car[:year]) }
+  carr.each do |car|
+    mmpy.push(car["mpy"])
+  end
+  mmpy.sort!
+  count = mmpy.length
+  if count.odd?
+    return mmpy[count/2]
+  elsif count.odd?
+    return mmpy[(count/2 - 1)] + mmpy[(count/2 + 1)] / 2
+  end
 end
 
 def mostPopularColour(carr)
@@ -151,7 +163,7 @@ end
 # p averageMileagePerYear cars
 # p averageYearOfProdaction cars
 # p averageMileage cars
-p medianOfMileage cars
+p averageMileagePerYear cars
 # Средний пробег
 # Средний год выпуска
 # Средний возраст
