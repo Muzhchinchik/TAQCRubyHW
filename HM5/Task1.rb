@@ -148,14 +148,14 @@ def medianMileagePerYear carr
   mmpy.sort!
   count = mmpy.length
   if count.odd?
-    return mmpy[count/2]
+    return mmpy[count / 2]
   elsif count.add?
-    return mmpy[(count/2 - 1)] + mmpy[(count/2 + 1)] / 2
+    return mmpy[(count / 2 - 1)] + mmpy[(count / 2 + 1)] / 2
   end
 end
 
 def mostPopularColour(carr)
- 
+
 end
 
 def theRarestColour carr
