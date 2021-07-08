@@ -37,7 +37,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/HM6/Task2.rb" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/HM6/Task4.rb" />
     <property name="settings.editor.selected.configurable" value="preferences.general" />
   </component>
   <component name="RunManager">
@@ -52,7 +52,7 @@
       <EXTENSION ID="JRubyRunConfigurationExtension" NailgunExecEnabled="false" />
       <EXTENSION ID="RubyCoverageRunConfigurationExtension" track_test_folders="true" runner="rcov" IGNORE_RCOVRT="true" ENABLE_BRANCH_COVERAGE="true" ENABLE_FORKED_COVERAGE="true" />
       <EXTENSION ID="org.jetbrains.plugins.ruby.rails.run.RailsRunConfigurationExtension" SCRATCH_USE_RAILS_RUNNER="false" />
-      <RUBY_RUN_CONFIG NAME="SCRIPT_PATH" VALUE="$MODULE_DIR$/HM6/Task2.rb" />
+      <RUBY_RUN_CONFIG NAME="SCRIPT_PATH" VALUE="$MODULE_DIR$/HM6/Task4.rb" />
       <RUBY_RUN_CONFIG NAME="SCRIPT_ARGS" VALUE="" />
       <method v="2" />
     </configuration>
@@ -87,7 +87,9 @@
       <workItem from="1625673658602" duration="1451000" />
       <workItem from="1625675530433" duration="5311000" />
       <workItem from="1625686318795" duration="903000" />
-      <workItem from="1625740610126" duration="301000" />
+      <workItem from="1625740610126" duration="720000" />
+      <workItem from="1625758821244" duration="1964000" />
+      <workItem from="1625771913477" duration="346000" />
     </task>
     <servers />
   </component>
@@ -95,6 +97,6 @@
     <option name="version" value="3" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/TAQCRubyHW@Unnamed.rcov" NAME="Unnamed Coverage Results" MODIFIED="1625740873015" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" MODULE_NAME="TAQCRubyHW" />
+    <SUITE FILE_PATH="coverage/TAQCRubyHW@Unnamed.rcov" NAME="Unnamed Coverage Results" MODIFIED="1625760794116" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" MODULE_NAME="TAQCRubyHW" />
   </component>
 </project>

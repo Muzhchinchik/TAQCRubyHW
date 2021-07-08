@@ -21,12 +21,10 @@ def abbreviatee(srt)
     word.include?("-") ? word.split("-"): word
   end
 =end
-
   newstr.each do |word|
   arr.push(word[0].upcase)
   end
   return arr.join('')
-
 end
 
 print abbreviatee(str)
