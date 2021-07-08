@@ -16,8 +16,14 @@ str = "Hello my world"
 def abbreviatee(srt)
   arr = []
   newstr=srt.split(" ")
+=begin
   newstr.each do |word|
-    arr.push(word[0].upcase)
+    word.include?("-") ? word.split("-"): word
+  end
+=end
+
+  newstr.each do |word|
+  arr.push(word[0].upcase)
   end
   return arr.join('')
 
