@@ -581,6 +581,9 @@ def lowest_lat arr
   arr.each do |latitude|
     massOfLatitude.push(latitude["loc_lat"].to_f)
   end
+  return massOfLatitude.sort
+  # bsearch, вроде как, должен искать ближайшее значение, но, чет, не работает
+=begin
   nearestLat1 = massOfLatitude.bsearch {|x| x <=  antarcticaLat }
   nearestLat2 = massOfLatitude.bsearch {|x| x >=  antarcticaLat }
   diference1 = antarcticaLat.abs - nearestLat1.abs
@@ -590,13 +593,17 @@ def lowest_lat arr
   else
     return  nearestLat1
   end
+=end
+
 
 end
-puts lowest_lat events
+#puts lowest_lat events
 
 def lowest_lon arr
-
+ 
 end
+
+#puts lowest_lon events
 
 def lowest_lat_lon arr
 
@@ -616,11 +623,14 @@ end
 
 def events_per_year arr
 
+
 end
 
 def zeroest_lat arr
 
 end
+
+
 =begin
 В файле dates.rb находится массив хешей и объявление функций. Реализуйте их. Описание функций:
 
