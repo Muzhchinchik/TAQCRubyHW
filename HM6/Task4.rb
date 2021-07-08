@@ -573,11 +573,26 @@ def countries arr
 
 end
 
-puts countries(events)
+# puts countries(events)
 
 def lowest_lat arr
+  antarcticaLat = -82.8627
+  massOfLatitude = []
+  arr.each do |latitude|
+    massOfLatitude.push(latitude["loc_lat"].to_f)
+  end
+  nearestLat1 = massOfLatitude.bsearch {|x| x <=  antarcticaLat }
+  nearestLat2 = massOfLatitude.bsearch {|x| x >=  antarcticaLat }
+  diference1 = antarcticaLat.abs - nearestLat1.abs
+  diference2 = antarcticaLat.abs - nearestLat2.abs
+  if diference1.abs > diference2.abs
+    return nearestLat2
+  else
+    return  nearestLat1
+  end
 
 end
+puts lowest_lat events
 
 def lowest_lon arr
 
