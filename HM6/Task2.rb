@@ -9,7 +9,7 @@ def self.abbreviate(phrase)
         .flatten
         .join.upcase
 end
-str = "Hello my world"
+str = "Hello my-world"
 #puts abbreviate(str)
 
 #----------Я СДЕЛЯЛЬ, но криво-------------
@@ -27,7 +27,7 @@ def abbreviatee(srt)
   return arr.join('')
 end
 
-print abbreviatee(str)
+#print abbreviatee(str)
 
 
 #Шаг за шагом:

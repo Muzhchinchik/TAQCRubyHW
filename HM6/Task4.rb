@@ -583,7 +583,7 @@ def lowest_lat arr
   end
   return massOfLatitude.sort
   # bsearch, вроде как, должен искать ближайшее значение, но, чет, не работает
-=begin
+
   nearestLat1 = massOfLatitude.bsearch {|x| x <=  antarcticaLat }
   nearestLat2 = massOfLatitude.bsearch {|x| x >=  antarcticaLat }
   diference1 = antarcticaLat.abs - nearestLat1.abs
@@ -593,21 +593,34 @@ def lowest_lat arr
   else
     return  nearestLat1
   end
-=end
+
 
 
 end
 #puts lowest_lat events
 
 def lowest_lon arr
- 
+  arrOfLans = []
+  arr.each do |element|
+    arrOfLans.push(element["loc_lon"])
+  end
+  arrOfLans.sort!
+  return arrOfLans[0]
+
 end
 
 #puts lowest_lon events
 
 def lowest_lat_lon arr
+  arrOfLans = []
+  arr.each do |element|
+    arrOfLans.push(element["loc_lon"])
+  end
+  arrOfLans.sort!
+  return arrOfLans[-1]
 
 end
+
 
 def highest_lat arr
 
@@ -622,11 +635,30 @@ def highest_lat_lon arr
 end
 
 def events_per_year arr
-
-
+  eventsYears = {}
+  arr.each do |eventss|
+    year = eventss["date"].split("-")[0]
+    eventsYears[year] = eventsYears.has_key?(year) ? eventsYears[year] + 1 : 1
+  end
+  return eventsYears
 end
 
+# puts events_per_year events
+
 def zeroest_lat arr
+  newArrPlus = []
+  newArrMinus = []
+  arr.each do |element|
+    if element["loc_lat"].to_f > 0
+      newArrPlus.push(element["loc_lat"].to_f)
+    else
+      newArrMinus.push(element["loc_lat"].to_f)
+    end
+  end
+  plus = newArrPlus.min - 0
+  minus = newArrMinus.max - 0
+
+  return plus.abs > minus.abs ? newArrMinus.max : newArrPlus.min
 
 end
 
