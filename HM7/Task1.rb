@@ -3,7 +3,7 @@
 
 length = rand(1..19)
 def random_string(length)
-  chars = 'abcdefghjkmnpqrstuvwxyzABCDEFGHJKLMNPQRSTUVWXYZ'
+  chars = 'abcdefghjkmnpqrstuvwxyzABCDEFGHJKLMNPQRSTUVWXYZ1234567890'
   firstLetter = 'ABCDEFGHJKLMNPQRSTUVWXYZ'
   login = ''
   first = ''
